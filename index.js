@@ -10,7 +10,13 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+ cart.push({itemName:'', 
+ itemPrice:Math.floor(Math.random()*100 +1),
+  allKeyValue: function (){
+     return this.itemName +""+  this.itemPrice
+   }
+ })// write your code here;
+ return cart
 }
 
 function viewCart() {
